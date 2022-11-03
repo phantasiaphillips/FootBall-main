@@ -37,12 +37,19 @@ function selectBtnOnClick() {
     let selectedTeamCode = teamSelect.value;
     let selectedTeam = getTeamFromCode(teams, selectedTeamCode);
 
-    let message ="You selected the ${selectedTeam.name}, (${selectedTeam.code}) who play in ${selectedTeam.plays}
+    let message = 'You selected the ${selectedTeam.name}, (${selectedTeam.code}) who play in ${selectedTeam.plays}'
     const teamInfo = document.getElementById(teamInfo);
     teamInfo.innerHTML = message;
 }
 
-
+function getTeamFromCode(teams, code){
+    let teamscount = teams.length;
+    for(let i = 0 ; i < teamscount ; i++){
+        if(teams[1].code == code){
+            return teams[i];
+        }
+    }
+}
 
 
 
