@@ -49,6 +49,7 @@ function getTeamFromCode(teams, code){
             return teams[i];
         }
     }
+    return null;
 }
 
 
