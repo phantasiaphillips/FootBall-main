@@ -37,7 +37,7 @@ function selectBtnOnClick() {
     let selectedTeamCode = teamSelect.value;
     let selectedTeam = getTeamFromCode(teams, selectedTeamCode);
 
-    let message = "You selected the ${selectedTeam.name} (${selectedTeam.code}) who play in ${selectedTeam.plays}.
+    let message ="You selected the ${selectedTeam.name}, (${selectedTeam.code}) who play in ${selectedTeam.plays}
     const teamInfo = document.getElementById(teamInfo);
     teamInfo.innerHTML = message;
 }
